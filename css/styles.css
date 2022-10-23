@@ -1,0 +1,138 @@
+:root{
+	--Primary-text-color: #212121;
+	--Secondary-text-color: #757575;
+   --Accent: #2196F3;
+	--White-color: #FFFFFF;
+}
+.list{
+	list-style: none;
+}
+.link{
+	text-decoration: none;
+}
+body{
+	font-family: 'Roboto',sans-serif;
+	color: var(--Primary-text-color);
+	background-color: var(--White-color);
+	letter-spacing: 0.03em;
+
+}
+.logo{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	text-decoration: none;
+   color: #000000;
+	
+}
+.logo-accent{
+	font-family: 'Raleway', sans-serif;
+   color: var(--Accent);
+}
+.nav-link{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--Primary-text-color);
+}
+.contacts-link{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--Secondary-text-color);
+}
+.hero{
+	background-color: #2F303A;
+}
+.hero-title{
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.4;
+
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--White-color);
+}
+.primery-btn{
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+
+
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--White-color);
+background-color: var(--Accent);
+}
+.advantage-titel{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+.advantage-text{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+color: var(--Secondary-text-color);
+}
+.benefits-titel{
+	font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+}
+.team-titel{
+	font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+}
+.team-subtitel{
+	font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+}
+.team-text{
+	font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.2;
+
+text-align: center;
+color: var(--Secondary-text-color);
+}
+.footer{
+	background-color: #2F303A;
+}
+.logo-footer{
+	color: var(--White-color);
+}
+.address-link{
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+color: var(--White-color);
+}
+.address-link--rgbg{
+	color: rgba(255, 255, 255, 0.6);
+}
