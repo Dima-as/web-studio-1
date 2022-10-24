@@ -117,10 +117,9 @@ text-align: center;
 }
 .team-subtitel{
 	font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.2;
-text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
 }
 .team-text{
 	font-style: normal;
