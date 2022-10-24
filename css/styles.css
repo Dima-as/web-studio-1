@@ -39,6 +39,12 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--Primary-text-color);
 }
+.nav-link:hover,.nav-link:focus{
+	color: var(--Accent);
+}
+.curent{
+	color: var(--Accent);
+}
 .contacts-link{
 font-style: normal;
 font-weight: 500;
@@ -46,6 +52,9 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--Secondary-text-color);
+}
+.contacts-link:hover,.contacts-link:focus{
+	color: var(--Accent);
 }
 .hero{
 	background-color: #2F303A;
@@ -74,6 +83,9 @@ text-align: center;
 letter-spacing: 0.06em;
 color: var(--White-color);
 background-color: var(--Accent);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border-color: transparent;
 }
 .advantage-titel{
 font-style: normal;
@@ -135,4 +147,37 @@ color: var(--White-color);
 }
 .address-link--rgbg{
 	color: rgba(255, 255, 255, 0.6);
+}
+/* portfolio */
+.filter-btn{
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+
+
+text-align: center;
+letter-spacing: 0.03em;
+background: #F5F4FA;
+border-radius: 4px;
+border-color: transparent;
+}
+.filter-btn:hover,.filter-btn:focus{
+	background: var(--Accent);
+	color: var(--White-color);
+}
+.cards-titel{
+	font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+.cards-text{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	color: var(--Secondary-text-color);
 }
