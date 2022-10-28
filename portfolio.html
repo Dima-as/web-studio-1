@@ -1,105 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="./css/styles.css">
-  </head>
-  <body>
-	<header>
-      <a href="" class="logo"><samp class="logo-accent">Web</samp>Studio</a>
-      <nav class="nav">
-        <ul class=" list nav-list">
-          <li class="nav-item"><a class="link nav-link" href="">Studio</a></li>
-          <li class="nav-item"><a class="link nav-link curent" href="./index.html">Portfolio</a></li>
-          <li class="nav-item"><a class="link nav-link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <ul class=" list contacts">
-        <li class="contacts-item"><a class="link contacts-link" href="">info@devstudio.com</a></li>
-        <li class="contacts-item"><a class="link contacts-link" href="">+38 096 111 11 11</a></li>
-      </ul>
-    </header>
-    <main>
-      <section class="filter">
-        <ul class="filter-list list">
-          <li class="filter-item"><button type="button" class="filter-btn">All</button></li>
-          <li class="filter-item"><button type="button" class="filter-btn">Web sites</button></li>
-          <li class="filter-item"><button type="button" class="filter-btn">Applications</button></li>
-          <li class="filter-item"><button type="button" class="filter-btn">Design</button></li>
-          <li class="filter-item"><button type="button" class="filter-btn">Marketing</button></li>
-        </ul>
-      </section>
-      <section class="cards">
-        <ul class="cards-list list">
-          <li class="cards-item">
-            <img src="./images/cards.jpg" alt="Notebook" />
-            <h2 class="cards-titel">Technoquack</h2>
-            <p class="cards-text">Web sites</p>
-          </li>
-          <li class="cards-item">
-            <img src="./images/cards-2.jpg" alt="Basketball" />
-            <h2 class="cards-titel">Poster New Orlean vs Golden Star</h2>
-            <p class="cards-text">Design</p>
-          </li>
-          <li class="cards-item">
-            <img src="./images/cards-3.jpg" alt="Logo" />
-            <h2 class="cards-titel">Restaurant Seafood</h2>
-            <p class="cards-text">Applications</p>
-          </li>
-          <li class="cards-item">
-            <img src="./images/cards-4.jpg" alt="Headphones" />
-            <h2 class="cards-titel">Project Prime</h2>
-            <p class="cards-text">Marketing</p>
-          </li>
-          <li class="cards-item">
-            <img src="./images/cards-5.jpg" alt="Boxes" />
-            <h2 class="cards-titel">Project Boxes</h2>
-            <p class="cards-text">Applications</p>
-          </li>
-          <li class="cards-item">
-            <img src="./images/cards-6.jpg" alt="Monitor" />
-            <h2 class="cards-titel">Inspiration has no Borders</h2>
-            <p class="cards-text">Web site</p>
-          </li>
-          <li class="cards-item">
-            <img src="./images/cards-7.jpg" alt="Magazine" />
-            <h2 class="cards-titel">Edition Limited Edition</h2>
-            <p class="cards-text">Design</p>
-          </li>
-          <li class="cards-item">
-            <img src="./images/cards-8.jpg" alt="Tag" />
-            <h2 class="cards-titel">Project LAB</h2>
-            <p class="cards-text">Marketing</p>
-          </li>
-          <li class="cards-item">
-            <img src="./images/cards-9.jpg" alt="Notebook" />
-            <h2 class="cards-titel">Growing Business</h2>
-            <p class="cards-text">Applications</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-	 <footer class="footer">
-      <a href="" class="logo logo-footer link"><span class="logo-accent">Web</span>Studio</a>
-      <address class="address">
-        <ul class="list address-list">
-          <li class="address-item">
-            <a href="" class="link address-link"> Kyiv, Lesia Ukrainka Ave, 26</a>
-          </li>
-          <li class="address-item">
-            <a href="" class="link address-link address-link--rgbg">info@example.com</a>
-          </li>
-          <li class="address-item">
-            <a href="" class="link address-link address-link--rgbg">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-    </footer>
-  </body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header-wrapper">
+			<nav class="nav">
+				<a href="./index.html" class="logo"><samp class="logo-accent">Web</samp>Studio</a>
+				<ul class=" list nav-list">
+					<li class="nav-item"><a class="link nav-link" href="./index.html">Studio</a></li>
+					<li class="nav-item"><a class="link nav-link curent" href="">Portfolio</a></li>
+					<li class="nav-item"><a class="link nav-link" href="">Contacts</a></li>
+				</ul>
+			</nav>
+			<ul class=" list contacts-list">
+				<li class="contacts-item"><a class="link contacts-link" href="">info@devstudio.com</a></li>
+				<li class="contacts-item"><a class="link contacts-link" href="">+38 096 111 11 11</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<section class="cards">
+			<div class="container">
+				<h1 class="visually-hidden">portfolio</h1>
+				<ul class="filter-list list">
+					<li class="filter-item"><button type="button" class="filter-btn">All</button></li>
+					<li class="filter-item"><button type="button" class="filter-btn">Web sites</button></li>
+					<li class="filter-item"><button type="button" class="filter-btn">Applications</button></li>
+					<li class="filter-item"><button type="button" class="filter-btn">Design</button></li>
+					<li class="filter-item"><button type="button" class="filter-btn">Marketing</button></li>
+				</ul>
+
+				<ul class="cards-list list">
+					<li class="cards-item">
+						<img src="./images/cards.jpg" alt="Notebook">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Technoquack</h2>
+							<p class="cards-text">Web sites</p>
+						</div>
+					</li>
+
+					<li class="cards-item">
+						<img src="./images/cards-2.jpg" alt="Basketball">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Poster New Orlean vs Golden Star</h2>
+							<p class="cards-text">Design</p>
+						</div>
+					</li>
+
+					<li class="cards-item">
+						<img src="./images/cards-3.jpg" alt="Logo">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Restaurant Seafood</h2>
+							<p class="cards-text">Applications</p>
+						</div>
+					</li>
+
+					<li class="cards-item">
+						<img src="./images/cards-4.jpg" alt="Headphones">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Project Prime</h2>
+							<p class="cards-text">Marketing</p>
+						</div>
+					</li>
+
+					<li class="cards-item">
+						<img src="./images/cards-5.jpg" alt="Boxes">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Project Boxes</h2>
+							<p class="cards-text">Applications</p>
+						</div>
+					</li>
+
+					<li class="cards-item">
+						<img src="./images/cards-6.jpg" alt="Monitor">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Inspiration has no Borders</h2>
+							<p class="cards-text">Web site</p>
+						</div>
+					</li>
+
+					<li class="cards-item">
+						<img src="./images/cards-7.jpg" alt="Magazine">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Edition Limited Edition</h2>
+							<p class="cards-text">Design</p>
+						</div>
+					</li>
+
+					<li class="cards-item">
+						<img src="./images/cards-8.jpg" alt="Tag">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Project LAB</h2>
+							<p class="cards-text">Marketing</p>
+						</div>
+					</li>
+
+					<li class="cards-item">
+						<img src="./images/cards-9.jpg" alt="Notebook">
+						<div class="cards-wrapper">
+							<h2 class="cards-titel">Growing Business</h2>
+							<p class="cards-text">Applications</p>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<a href="" class="logo logo-footer link"><span class="logo-accent">Web</span>Studio</a>
+			<address class="address">
+				<ul class="list address-list">
+					<li class="address-item">
+						<a href="" class="link address-link"> Kyiv, Lesia Ukrainka Ave, 26</a>
+					</li>
+					<li class="address-item">
+						<a href="" class="link address-link address-link--rgbg">info@example.com</a>
+					</li>
+					<li class="address-item">
+						<a href="" class="link address-link address-link--rgbg">+38 099 111 11 11</a>
+					</li>
+				</ul>
+			</address>
+		</div>
+	</footer>
+</body>
+
 </html>
