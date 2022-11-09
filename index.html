@@ -48,7 +48,7 @@
 	<main>
 		<section class="hero">
 			<h1 class="hero-title">Effective solutions <br> for your business</h1>
-			<button type="button" class="primery-btn">Order service</button>
+			<button type="button" class="primery-btn" data-modal-open >Order service</button>
 		</section>
 		<section class=" section advantage">
 			<div class="container">
@@ -385,6 +385,18 @@
 			</div>
 		</div>
 	</footer>
+	<div class="backdrop is-hidden" data-modal>
+		<div class="container">
+		<div class="modal-wrapper">
+          <button type="button" class="modal-btn" data-modal-close>
+				<svg>
+					<use href="./images/sprite.svg#icon-close1"></use>
+				</svg>
+			 </button>
+		</div>
+	</div>
+	</div>
+	<script src="./js/index.js"></script>
 </body>
 
 </html>
