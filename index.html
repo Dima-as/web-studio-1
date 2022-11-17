@@ -386,15 +386,53 @@
 		</div>
 	</footer>
 	<div class="backdrop is-hidden" data-modal>
-		<div class="container">
 		<div class="modal-wrapper">
           <button type="button" class="modal-btn" data-modal-close>
 				<svg>
 					<use href="./images/sprite.svg#icon-close1"></use>
 				</svg>
 			 </button>
+			 <h2 class="modal-titel">Leave your details, we will call you back</h2>
+			 <form action="" class="form">
+				<label class="form-label">
+					Name
+					<spam class="form-input-wrapper">
+					<input type="text" class="form-input">
+					<svg class="form-icon" width="18" height="18">
+						<use href="./images/sprite.svg#icon-person"></use>
+					</svg>
+				</spam>
+				</label>
+				<label class="form-label">
+					Telephone
+					<spam class="form-input-wrapper">
+					<input type="tel" class="form-input">
+					<svg class="form-icon" width="18" height="18">
+						<use href="./images/sprite.svg#icon-phone2"></use>
+					</svg>
+				</spam>
+				</label>
+				<label  class="form-label">
+					Mail
+					<spam class="form-input-wrapper">
+					<input type="mail" class="form-input">
+					<svg class="form-icon" width="18" height="18">
+						<use href="./images/sprite.svg#icon-email2"></use>
+					</svg>
+				</spam>
+				</label>
+				<label class="form-label">
+					Comment
+				<textarea name="text" class="form-texterea"></textarea>
+			</label>
+			<div class="form-checkbox-wrapper">
+				<input type="checkbox" name="" id="check" class="from-checkbox">
+				<label for="check">
+					I agree with the newsletter and accept
+				</label>
+			</div>
+			 </form>
 		</div>
-	</div>
 	</div>
 	<script src="./js/index.js"></script>
 </body>

@@ -12,7 +12,13 @@
 
    function toggleModal() {
       refs.modal.classList.toggle('is-hidden');
-		refs.body.classList.toggle('body')
+		refs.body.classList.toggle('body-overflow')
    }
 })();
- 
+
+//  let item =''
+// filter.forEach(element => {
+// 	item=element
+	
+// });
+// console.log(item);
