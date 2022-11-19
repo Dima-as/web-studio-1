@@ -441,7 +441,6 @@ body {
 .logo-footer {
 	color: var(--White-color);
 	font-style: normal;
-	/* margin-bottom: 20px; */
 }
 
 .address {
@@ -678,6 +677,7 @@ body {
 	border: none;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .newsletter-icon {
@@ -697,14 +697,10 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 528px;
-	/* height: 581px; */
 	background: #FFFFFF;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	/* padding-top: 50px;
-	padding-left: 40px;
-	padding-right: 40px; */
 	padding: 40px;
 }
 
@@ -763,10 +759,6 @@ body {
 	margin-bottom: 20px;
 }
 
-/* .form-label:not(:last-child){
-	margin-bottom: 10px;
-} */
-
 .form-input-wrapper {
 	position: relative;
 	margin-top: 4px;
@@ -822,12 +814,8 @@ body {
 
 .form-checkbox-wrapper {
 	display: flex;
-	text-align: center;
+	align-items: center;
 	margin-bottom: 30px;
-}
-
-.from-checkbox {
-	margin-right: 7px;
 }
 
 .form-btn {
@@ -844,4 +832,30 @@ body {
 	padding: 10px 55px;
 	background: var(--Accent);
 	color: var(--White-color);
+	cursor: pointer;
+}
+.from-checkbox{
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+.form-checkbox-icon{
+	width: 16px;
+	height: 15px;
+	border-radius: 4px;
+	border: 1px solid var(--Primary-text-color);
+	margin-right: 7px;
+}
+.from-checkbox:checked ~ .form-checkbox-icon{
+	content: "";
+	background-color: var(--Accent);
+	background-image: url(../images/icon-check.svg);
+	border: 1px solid var(--Accent);
+	background-size: cover;
+	background-origin: border-box;
 }

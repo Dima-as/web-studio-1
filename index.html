@@ -385,7 +385,7 @@
 			</div>
 			<div class="newsletter">
 					<h2 class="newsletter-titel">Subscribe to newsletter</h2>
-             <div class="newsletter-wrapper">
+             <form class="newsletter-wrapper">
 					<input type="text" class="newsletter-input" placeholder="E-mail">
 					<button class="newsletter-btn">
 						Subscribe
@@ -393,7 +393,7 @@
 							<use href="./images/sprite.svg#icon-lit"></use>
 						</svg>
 					</button>
-				 </div>
+				 </form>
 			</div>
 		</div>
 	</footer>
@@ -435,14 +435,15 @@
 				</label>
 				<label class="form-label">
 					Comment
-				<textarea name="text" class="form-texterea">Enter text</textarea>
+				<textarea name="text" class="form-texterea" placeholder="Enter text"></textarea>
 			</label>
-			<div class="form-checkbox-wrapper">
-				<input type="checkbox" name="" id="check" class="from-checkbox">
-				<label for="check">
+			
+				<label for="check" class="form-checkbox-wrapper">
+					<input type="checkbox" name="check" id="check" class="from-checkbox">
+					<span class="form-checkbox-icon"></span>
 					I agree with the newsletter and accept
 				</label>
-			</div>
+			
          <button type="submit" class="form-btn">Send</button>
 			 </form>
 		</div>
