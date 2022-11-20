@@ -1,0 +1,74 @@
+.team {
+	padding: 94px 0px;
+	background: #F5F4FA;
+}
+
+.team-list {
+	display: flex;
+	align-items: center;
+}
+
+.team-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.team-titel {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.team-wrapper {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	background-color: var(--White-color);
+	padding: 30px 32px;
+}
+
+.team-subtitel {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: center;
+
+	margin-bottom: 10px;
+}
+
+.team-text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.2;
+
+	text-align: center;
+	color: var(--Secondary-text-color);
+	margin-bottom: 16px;
+}
+
+.socials-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.socials-link {
+	fill: #AFB1B8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.socials-link:hover,
+.socials-link:focus {
+	fill: var(--White-color);
+	background: var(--Accent);
+}
