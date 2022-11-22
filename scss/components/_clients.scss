@@ -9,7 +9,7 @@
 	line-height: 1.16;
 	margin-bottom: 50px;
 
-	color: var(--Primary-text-color);
+	color: $Primary-text-color;
 }
 
 .clients-list {
@@ -29,10 +29,10 @@
 	fill: #AFB1B8;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.cliens-link:hover,
-.cliens-link:focus {
-	fill: var(--Accent);
-	border: 1px solid var(--Accent);
+	&:hover,
+	&:focus {
+		fill: $Accent;
+		border: 1px solid $Accent;
+	}
 }

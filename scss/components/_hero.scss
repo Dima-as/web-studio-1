@@ -24,7 +24,7 @@
 
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--White-color);
+	color: $White-color;
 	margin-bottom: 30px;
 }
 
@@ -36,8 +36,8 @@
 	line-height: 1.9;
 
 	letter-spacing: 0.06em;
-	color: var(--White-color);
-	background-color: var(--Accent);
+	color: $White-color;
+	background-color: $Accent;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border-color: transparent;

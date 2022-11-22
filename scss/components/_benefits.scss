@@ -19,10 +19,10 @@
 
 .benefits-item {
 	position: relative;
-}
 
-.benefits-item:not(:last-child) {
-	margin-right: 30px;
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
 }
 
 .benefits-wrapper {
@@ -40,5 +40,5 @@
 	line-height: 16px;
 	text-align: center;
 	text-transform: uppercase;
-	color: var(--White-color);
+	color: $White-color;
 }

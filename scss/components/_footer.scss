@@ -9,7 +9,7 @@
 }
 
 .logo-footer {
-	color: var(--White-color);
+	color: $White-color;
 	font-style: normal;
 }
 
@@ -27,26 +27,23 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.7;
-	color: var(--White-color);
+	color: $White-color;
 }
 
 .address-link--rgbg {
 	color: rgba(255, 255, 255, 0.6);
+
+	&:not(:last-child) {
+		margin-bottom: 9px;
+	}
 }
-
-.address-item:not(:last-child) {
-	margin-bottom: 9px;
-}
-
-/* portfolio */
-
 
 .join-titel {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
-	color: var(--White-color);
+	color: $White-color;
 	margin-bottom: 20px;
 }
 
@@ -54,7 +51,7 @@
 	display: flex;
 	align-items: center;
 }
-
+ 
 .join-item:not(:last-child) {
 	margin-right: 10px;
 }
@@ -68,15 +65,15 @@
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
 	transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.join-link:hover,
-.join-link:focus {
-	background: var(--Accent);
+	&:hover,
+	&:focus {
+		background: $Accent;
+	}
 }
 
 .join-icon {
-	fill: var(--White-color);
+	fill: $White-color;
 }
 
 .backdrop {
@@ -101,7 +98,7 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	color: var(--White-color);
+	color: $White-color;
 }
 
 .newsletter-wrapper {
@@ -137,8 +134,8 @@
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
-	background: var(--Accent);
-	color: var(--White-color);
+	background: $Accent;
+	color: $White-color;
 	padding: 13px 20px;
 	border: none;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

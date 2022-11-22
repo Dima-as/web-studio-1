@@ -1,3 +1,10 @@
+$Primary-text-color: #212121;
+$Secondary-text-color: #757575;
+$Accent: #2196F3;
+$White-color: #FFFFFF;
+
+
+
 h1,
 h2,
 h3,
@@ -36,8 +43,8 @@ img {
 }
 body {
 	font-family: 'Roboto', sans-serif;
-	color: var(--Primary-text-color);
-	background-color: var(--White-color);
+	color: $Primary-text-color;
+	background-color: $White-color;
 	letter-spacing: 0.03em;
 	margin-left: auto;
 	margin-right: auto;

@@ -8,10 +8,11 @@
 	justify-content: center;
 	margin-bottom: 34px;
 }
-
+ 
 .filter-item:not(:last-child) {
 	margin-right: 8px;
 }
+
 
 .filter-btn {
 	font-family: 'Roboto';
@@ -30,13 +31,15 @@
 	padding: 6px 22px;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background: $Accent;
+		color: $White-color;
+	}
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
-	background: var(--Accent);
-	color: var(--White-color);
-}
+
 
 .cards-list {
 	display: flex;
@@ -67,6 +70,10 @@
 	padding: 66px 24px;
 	background: rgba(33, 150, 243, 0.9);
 	transition: transform 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	.cards-item:hover & {
+		transform: translateY(0);
+	}
 }
 
 .cards-subtext {
@@ -76,9 +83,6 @@
 	color: var(--White-color);
 }
 
-.cards-item:hover .cards-container--position {
-	transform: translateY(0);
-}
 
 .cards-titel {
 	font-style: normal;
