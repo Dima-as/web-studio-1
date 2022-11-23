@@ -549,7 +549,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: var(--White-color);
+  color: #FFFFFF;
 }
 
 .cards-titel {
@@ -565,7 +565,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: var(--Secondary-text-color);
+  color: #757575;
 }
 
 .cards-wrapper {
