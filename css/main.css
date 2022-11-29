@@ -55,13 +55,38 @@ body {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 1200px;
+}
+@media screen and (min-width: 567px) {
+  .container {
+    width: 567px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 10px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
 .header-wrapper {
@@ -80,6 +105,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .logo {
@@ -151,6 +181,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+}
+@media screen and (max-width: 1199px) {
+  .contacts-list {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    display: none;
+  }
 }
 
 .contacts-item:not(:last-child) {
@@ -225,6 +265,11 @@ body {
 .advantage {
   padding: 94px 0px;
 }
+@media screen and (max-width: 767px) {
+  .advantage {
+    padding: 60px 0px;
+  }
+}
 
 .wrapper-advantage--icon {
   background: #F5F4FA;
@@ -239,8 +284,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
   height: 120px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper-advantage--icon {
+    width: 270px;
+  }
 }
 
 .advantage-list {
@@ -251,16 +300,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.advantage-item {
-  width: 270px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (max-width: 767px) {
+  .advantage-list {
+    display: block;
+  }
 }
 
-.advantage-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .advantage-item {
+    width: 270px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantage-titel {
@@ -297,16 +355,33 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .benefits-list {
+    display: block;
+  }
+}
 
 .benefits {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 767px) {
+  .benefits {
+    padding-bottom: 60px;
+  }
 }
 
 .benefits-item {
   position: relative;
 }
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .benefits-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .benefits-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .benefits-wrapper {
@@ -340,9 +415,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .team-list {
+    display: block;
+  }
+}
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-titel {
@@ -419,6 +506,11 @@ body {
   text-align: center;
   padding: 94px 0px;
 }
+@media screen and (max-width: 767px) {
+  .clients {
+    padding: 60px 0px;
+  }
+}
 
 .clients-titel {
   font-weight: 700;
@@ -438,6 +530,20 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .clients-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
 
 .cliens-link {
@@ -581,12 +687,17 @@ body {
 }
 
 .footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .logo-footer {
@@ -595,7 +706,12 @@ body {
 }
 
 .address {
-  margin-right: 100px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .address {
+    margin-right: 100px;
+  }
 }
 
 .address-list {
@@ -627,6 +743,10 @@ body {
   margin-bottom: 20px;
 }
 
+.join {
+  margin-bottom: 60px;
+}
+
 .join-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,6 +754,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .join-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .join-item:not(:last-child) {
@@ -675,9 +802,11 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.newsletter {
-  text-align: left;
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .newsletter {
+    text-align: left;
+    margin-left: auto;
+  }
 }
 
 .newsletter-titel {
@@ -698,6 +827,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .newsletter-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .newsletter-input {
   font-weight: 400;
@@ -705,15 +842,21 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  width: 358px;
+  width: 100%;
   padding: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   background: transparent;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .newsletter-input {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .newsletter-btn {

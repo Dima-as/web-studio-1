@@ -6,10 +6,19 @@
 .team-list {
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
 }
 
 .team-item:not(:last-child) {
-	margin-right: 30px;
+	@media screen and (max-width: 767px) {
+		margin-bottom: 30px;
+	}
+
+	@media screen and(min-width:768px){
+		margin-right: 30px;
+	}
 }
 
 .team-titel {

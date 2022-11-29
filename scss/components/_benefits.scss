@@ -11,17 +11,31 @@
 .benefits-list {
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
 }
 
 .benefits {
 	padding-bottom: 94px;
+	@media screen and(max-width:767px){
+		padding-bottom: 60px;
+	}
 }
 
 .benefits-item {
 	position: relative;
 
-	&:not(:last-child) {
-		margin-right: 30px;
+	@media screen and(min-width:768px){
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	@media screen and(max-width:767px){
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
 	}
 }
 
