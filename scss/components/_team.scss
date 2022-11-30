@@ -1,6 +1,9 @@
 .team {
 	padding: 94px 0px;
 	background: #F5F4FA;
+	@media screen and(max-width:1199px){
+		padding: 60px 0px;
+	}
 }
 
 .team-list {
@@ -9,14 +12,23 @@
 	@media screen and (max-width: 767px) {
 		display: block;
 	}
+	@media screen and(max-width:1199px){
+		flex-wrap: wrap;
+		margin: 15px;
+	}
 }
-
+ .team-item{
+	@media screen and(min-width:768px){
+		width: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
+	}
+ }
 .team-item:not(:last-child) {
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
 	}
 
-	@media screen and(min-width:768px){
+	@media screen and(min-width:1199px){
 		margin-right: 30px;
 	}
 }
