@@ -1,11 +1,13 @@
 .header {
-	 padding-top: 24px;
-	 padding-bottom: 25px;
+	padding-top: 24px;
+	padding-bottom: 25px;
 	border-bottom: 1px solid #ECECEC;
+
 	@media screen and (max-width: 767px) {
 		padding: 10px 0px;
 	}
-	@media screen and(min-width: 768px){
+
+	@media screen and(min-width: 768px) {
 		padding-top: 21px;
 		padding-bottom: 21px;
 	}
@@ -19,6 +21,7 @@
 .nav {
 	display: flex;
 	align-items: center;
+
 	@media screen and (max-width:767px) {
 		display: none;
 	}
@@ -91,8 +94,8 @@
 
 	@media screen and (max-width:1199px) {
 		display: block;
-	 }
- 
+	}
+
 
 	@media screen and (max-width:767px) {
 		display: none;
