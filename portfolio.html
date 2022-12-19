@@ -17,8 +17,27 @@
 
 <body>
 	<header class="header">
+		<div class="mobil-nav is-hidden" data-mobil>
+			<div class="container">
+				<button class="burger burger-close" data-mobil-close>
+					<svg width="40" height="40">
+						<use href="./images/sprite.svg#icon-close1" class="menu-close" ></use>
+					</svg>
+				</button>
+				<ul class="mobil-nav-list list">
+					<li class="mobil-nav-item"><a class="mobil-nav-link link " href="./index.html" >Studio</a></li>
+					<li class="mobil-nav-item"><a href="" class="mobil-nav-link link curent">Portfolio</a></li>
+					<li class="mobil-nav-item"><a href="" class="mobil-nav-link link">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
 		<div class="container header-wrapper">
 			<a href="./index.html" class="logo"><samp class="logo-accent">Web</samp>Studio</a>
+			<button class="burger" data-mobil-open>
+				<svg width="40" height="40">
+					<use href="./images/sprite.svg#icon-menu" class="menu-open"></use>
+				</svg>
+			</button>
 			<nav class="nav">
 				<ul class=" list nav-list">
 					<li class="nav-item"><a class="link nav-link" href="./index.html">Studio</a></li>
@@ -261,7 +280,7 @@
 		</div>
 		</div>
 	</footer>
-	<script src="./js/portfolio.js"></script>
+	<script src="./js/portfolio.js" type="module"></script>
 </body>
 
 </html>

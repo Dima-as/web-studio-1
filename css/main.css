@@ -89,19 +89,14 @@ body {
   }
 }
 
-.header-wrapper {
+.mobil-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.burger {
-  background-color: transparent;
-  border: none;
-  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mobil-nav {
@@ -113,6 +108,101 @@ body {
   -webkit-perspective: 500px;
           perspective: 500px;
   z-index: 99;
+}
+@media screen and (min-width: 768px) {
+  .mobil-nav {
+    display: none;
+  }
+}
+
+.burger {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+.burger-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.mobil-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobil-nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-contacts {
+  margin-top: auto;
+}
+
+.mobile-contacts__item:first-child {
+  margin-bottom: 32px;
+}
+.mobile-contacts__item:last-child {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__link {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #757575;
+}
+.mobile-contacts__link:hover, .mobile-contacts__link:focus {
+  color: #2196F3;
+  font-size: 34px;
+  line-height: 1.17;
+}
+
+.mobile-network {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mobile-network__item:not(:last-child) {
+  border-right: solid 1px rgba(33, 33, 33, 0.2);
+  color: #757575;
+  margin-right: 10px;
+}
+.mobile-network__item:not(:last-child) .mobile-network__link {
+  margin-right: 10px;
+}
+
+.mobile-network__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav {
