@@ -1149,7 +1149,6 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .backdrop {
-    padding-top: 50px;
     padding-bottom: 50px;
   }
 }
