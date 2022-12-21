@@ -1147,12 +1147,6 @@ body {
           perspective: 500px;
   z-index: 99;
 }
-@media screen and (max-width: 1199px) {
-  .backdrop {
-    padding-bottom: 50px;
-  }
-}
-
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -1306,8 +1300,8 @@ body {
 .form-checkbox-wrapper {
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 1.2;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   display: -webkit-box;
@@ -1317,6 +1311,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .form-checkbox-wrapper {
+    font-size: 17px;
+    line-height: 1.2;
+  }
 }
 
 .form-btn {
@@ -1361,5 +1361,10 @@ body {
   height: 15px;
   border-radius: 2px;
   border: 1px solid #212121;
-  margin-right: 7px;
+  margin-right: 4px;
+}
+@media screen and (min-width: 768px) {
+  .form-checkbox-icon {
+    margin-right: 7px;
+  }
 }/*# sourceMappingURL=main.css.map */
