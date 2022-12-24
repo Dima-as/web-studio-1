@@ -31,6 +31,7 @@ img {
 	width: 100%;
 	height: auto;
 }
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -41,6 +42,7 @@ img {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
 body {
 	font-family: 'Roboto', sans-serif;
 	color: $Primary-text-color;
@@ -55,18 +57,22 @@ body {
 	/* overflow-x:hidden; */
 	overflow-y: hidden;
 }
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
 	padding-right: 15px;
 	padding-left: 15px;
+
 	@media screen and (min-width: 567px) {
 		width: 567px;
-	 }
-	 @media screen and (min-width: 768px) {
+	}
+
+	@media screen and (min-width: 768px) {
 		width: 768px;
-	 }
-	 @media screen and (min-width: 1200px) {
+	}
+
+	@media screen and (min-width: 1200px) {
 		width: 1200px;
-	 }
+	}
 }

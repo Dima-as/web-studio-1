@@ -17,11 +17,11 @@
 
 <body>
 	<header class="header">
-		<div class="mobil-nav is-hidden" data-mobil>
-			<div class="mobil-wrap container">
+		<div class="mobil-nav is-hidden container" data-mobil>
+			<div class="mobil-wrap ">
 				<button class="burger burger-close" data-mobil-close>
 					<svg width="40" height="40">
-						<use href="./images/sprite.svg#icon-close1" class="menu-close" ></use>
+						<use href="./images/sprite.svg#icon-close1" class="menu-close"></use>
 					</svg>
 				</button>
 				<ul class="mobil-nav-list list">
@@ -29,10 +29,11 @@
 					<li class="mobil-nav-item"><a href="./portfolio.html" class="mobil-nav-link link">Portfolio</a></li>
 					<li class="mobil-nav-item"><a href="" class="mobil-nav-link link">Contacts</a></li>
 				</ul>
-				<!-- <div class="flex"> -->
 				<ul class="mobile-contacts list">
-					<li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-					<li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					<li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380961111111">+38 096
+							111 11 11</a></li>
+					<li class="mobile-contacts__item"><a class="mobile-contacts__link link"
+							href="mailto:info@devstudio.com">info@devstudio.com</a></li>
 				</ul>
 				<ul class="mobile-network list">
 					<li class="mobile-network__item"><a class="mobile-network__link link" href="">Instagram</a></li>
@@ -40,7 +41,6 @@
 					<li class="mobile-network__item"><a class="mobile-network__link link" href="">Facebook</a></li>
 					<li class="mobile-network__item"><a class="mobile-network__link link" href="">LinkedIn</a></li>
 				</ul>
-			<!-- </div> -->
 			</div>
 		</div>
 		<div class="container header-wrapper">
@@ -79,7 +79,7 @@
 	<main>
 		<section class="hero">
 			<h1 class="hero-title">Effective solutions <br> for your business</h1>
-			<button type="button" class="primery-btn" data-modal-open >Order service</button>
+			<button type="button" class="primery-btn" data-modal-open>Order service</button>
 		</section>
 		<section class=" section advantage">
 			<div class="container">
@@ -117,7 +117,8 @@
 						</div>
 						<h3 class="advantage-titel">Planning</h3>
 						<p class="advantage-text">
-							The task of the organization, in particular the framework and place of training of personnel entails.
+							The task of the organization, in particular the framework and place of training of personnel
+							entails.
 
 						</p>
 					</li>
@@ -419,8 +420,8 @@
 				</ul>
 			</div>
 			<div class="newsletter">
-					<h2 class="newsletter-titel">Subscribe to newsletter</h2>
-             <form class="newsletter-wrapper">
+				<h2 class="newsletter-titel">Subscribe to newsletter</h2>
+				<form class="newsletter-wrapper">
 					<input type="text" class="newsletter-input" placeholder="E-mail">
 					<button class="newsletter-btn">
 						Subscribe
@@ -428,59 +429,64 @@
 							<use href="./images/sprite.svg#icon-lit"></use>
 						</svg>
 					</button>
-				 </form>
+				</form>
 			</div>
 		</div>
 	</footer>
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal-wrapper">
-          <button type="button" class="modal-btn" data-modal-close>
+			<button type="button" class="modal-btn" data-modal-close>
 				<svg>
 					<use href="./images/sprite.svg#icon-close1"></use>
 				</svg>
-			 </button>
-			 <h2 class="modal-titel">Leave your details, we will call you back</h2>
-			 <form action="" class="form">
+			</button>
+			<h2 class="modal-titel">Leave your details, we will call you back</h2>
+			<form action="" class="form">
 				<label class="form-label">
-					Name
 					<spam class="form-input-wrapper">
-					<input type="text" class="form-input">
-					<svg class="form-icon" width="18" height="18">
-						<use href="./images/sprite.svg#icon-person"></use>
-					</svg>
-				</spam>
+						<input type="text" class="form-input" required placeholder=" ">
+						<span class="form-subtext">
+						<svg class="form-icon" width="18" height="18">
+							<use href="./images/sprite.svg#icon-person"></use>
+						</svg>
+					Name *</span>
+					</spam>
 				</label>
 				<label class="form-label">
-					Telephone
-					<spam class="form-input-wrapper">
-					<input type="tel" class="form-input">
-					<svg class="form-icon" width="18" height="18">
-						<use href="./images/sprite.svg#icon-phone2"></use>
-					</svg>
-				</spam>
+					<span class="form-input-wrapper">
+						<input type="tel" class="form-input" required placeholder=" ">
+						<span class="form-subtext">
+						<svg class="form-icon" width="18" height="18">
+							<use href="./images/sprite.svg#icon-phone2"></use>
+						</svg>
+						Telephone *
+					</span>
+					</span>
 				</label>
-				<label  class="form-label">
-					Mail
-					<spam class="form-input-wrapper">
-					<input type="mail" class="form-input">
-					<svg class="form-icon" width="18" height="18">
-						<use href="./images/sprite.svg#icon-email2"></use>
-					</svg>
-				</spam>
+				<label class="form-label">
+					<span class="form-input-wrapper">
+						<input type="mail" class="form-input" required placeholder=" ">
+						<span class="form-subtext">
+						<svg class="form-icon" width="18" height="18">
+							<use href="./images/sprite.svg#icon-email2"></use>
+						</svg>
+						Mail *
+					</span>
+					</span>
 				</label>
 				<label class="form-label">
 					Comment
-				<textarea name="text" class="form-texterea" placeholder="Enter text"></textarea>
-			</label>
-			
+					<textarea name="text" class="form-texterea" placeholder="Enter text"></textarea>
+				</label>
+
 				<label for="check" class="form-checkbox-wrapper">
-					<input type="checkbox" name="check" id="check" class="from-checkbox">
+					<input type="checkbox" name="check" id="check" class="from-checkbox" required>
 					<span class="form-checkbox-icon"></span>
 					I agree with the newsletter and accept
 				</label>
-			
-         <button type="submit" class="form-btn">Send</button>
-			 </form>
+
+				<button type="submit" class="form-btn">Send</button>
+			</form>
 		</div>
 	</div>
 	<script src="./js/index.js" type="module"></script>

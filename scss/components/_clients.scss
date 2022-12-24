@@ -1,7 +1,8 @@
 .clients {
 	text-align: center;
 	padding: 94px 0px;
-	@media screen and(max-width:1199px){
+
+	@media screen and(max-width:1199px) {
 		padding: 60px 0px;
 	}
 }
@@ -11,7 +12,6 @@
 	font-size: 36px;
 	line-height: 1.16;
 	margin-bottom: 50px;
-
 	color: $Primary-text-color;
 }
 
@@ -19,18 +19,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	@media screen and (max-width: 1199px) {
-		flex-wrap: wrap;
+		 flex-wrap: wrap;
 		margin: -15px;
 	}
 }
-.clients-item{
-	@media screen and (max-width: 767px) {
-		width: calc((100% - 4 * 15px) / 2);
-		margin: 15px;
-	}
+
+.clients-item {
 	@media screen and (max-width: 1199px) {
 		width: calc((100% - 6 * 15px) / 3);
+		margin: 15px;
+	}
+	@media screen and (max-width: 767px) {
+		width: calc((100% - 4 * 15px) / 2);
 		margin: 15px;
 	}
 }
@@ -52,7 +54,8 @@
 		fill: $Accent;
 		border: 1px solid $Accent;
 	}
-	@media screen and(min-width:1199px){
+
+	@media screen and(min-width:1199px) {
 		width: 170px;
 	}
 }
