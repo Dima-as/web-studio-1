@@ -15,16 +15,11 @@
 	flex-direction: column;
 	width: 100%;
 	margin-bottom: 20px;
-
-	// &:nth-last-child(3) {
-	// 	margin-bottom: 20px;
-	// }
 }
 
 .form-input-wrapper {
 	position: relative;
-	// margin-top: 4px;
-	
+
 }
 
 .form-input {
@@ -39,26 +34,21 @@
 		border: 2px solid $Accent;
 		outline: none;
 	}
-	// &:focus:not(:placeholder-shown) + .form-subtext{
-	// 	top: 0;
-	// 	color: $Accent;
-	// 	fill: $Accent;
-	// }
-	&:focus + .form-subtext, 
-	&:not(:placeholder-shown) +.form-subtext {
+
+	&:focus+.form-subtext,
+	&:not(:placeholder-shown)+.form-subtext {
 		top: 0;
 		color: $Accent;
 		fill: $Accent;
 	}
 }
 
-
-
 .form-icon {
-	margin-right: 4px;
+	margin-right: 6px;
 	fill: currentColor;
 }
-.form-subtext{
+
+.form-subtext {
 	position: absolute;
 	top: 50%;
 	left: 12px;
@@ -68,7 +58,7 @@
 	justify-content: center;
 	background: $White-color;
 	padding: 0 4px;
-	
+
 }
 
 .form-texterea {
@@ -96,10 +86,12 @@
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 14px;
-	@media screen and(min-width:768px){
+
+	@media screen and(min-width:768px) {
 		font-size: 17px;
 		line-height: 1.2;
 	}
+
 	letter-spacing: 0.03em;
 	color: $Secondary-text-color;
 
@@ -151,8 +143,9 @@
 	border-radius: 2px;
 	border: 1px solid $Primary-text-color;
 	margin-right: 4px;
-	@media screen and(min-width:768px){
+
+	@media screen and(min-width:768px) {
 		margin-right: 7px;
 	}
-	
+
 }

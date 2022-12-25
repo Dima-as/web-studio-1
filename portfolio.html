@@ -139,8 +139,8 @@
           </ul>
 
           <ul class="cards-list list">
-            <li class="cards-item">
-              <div class="cards-container">
+            <li class="cards-item" >
+              <div class="cards-container" data-cards-open>
                 <img src="./images/cards.jpg" alt="Notebook" />
                 <div class="cards-container--position">
                   <p class="cards-subtext">
@@ -366,6 +366,16 @@
         </div>
       </div>
     </footer>
+	 <div class="cards-modal is-hidden" data-cards>
+		<div>
+		<button type="button" class="burger burger-close" data-cards-close>
+			<svg width="40" height="40">
+				<use href="./images/sprite.svg#icon-close1" class="menu-close"></use>
+			</svg>
+	</button>
+	<img src="./images/mob/cards1-2x.jpg" alt="">
+</div>
+ </div>
     <script src="./js/portfolio.js" type="module"></script>
   </body>
 </html>
