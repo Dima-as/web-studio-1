@@ -13,17 +13,6 @@
    };
 
 	const {mobilOpen,mobilClose,mobil,body,cardsModalOpen,cardsModalClose,cardsModal,cardsItem,cardsImg} = refs
-	// const cardsList={
-	// 	notebook:"./images/mob/cards1-2x.jpg ",
-	// 	basketball:"./images/mob/cards2-2x.jpg",
-	// 	logo:"./images/mob/cards3-2x.jpg",
-	// 	headphones:"./images/mob/cards4-2x.jpg",
-	// 	boxes:"./images/mob/cards5-2x.jpg",
-	// 	monitor:"./images/mob/cards6-2x.jpg",
-	// 	magazine:"./images/mob/cards7-2x.jpg",
-	// 	tag:"./images/mob/cards8-2x.jpg",
-	// 	computer:"./images/mob/cards9-2x.jpg"
-	// }
 	
 	const cardsList=[
 		{src:"./images/mob/cards1-2x.jpg",alt:"notebook"},
@@ -58,26 +47,17 @@
 		body.classList.toggle('body-overflow')
 	}
 
-	function cardSwitch(){
-		let element = []
+	function cardSwitch(event){
+		let e =event.currentTarget.alt
 		let arr = []
-      for (let i = 0; i < cardsItem.length; i+=1) {
-			 element = cardsItem[i];
-		}
-		for (let i = 0; i < cardsList.length; i+=1) {
-			 arr = cardsList[i];
-		}
-		console.log(arr.alt);
-		console.log(element.alt);
 		
-		if (arr.alt === element.alt) {
-		 return cardsImg.src=arr.src
-			
-		//   return cardsImg.src=" "
-		 }
-		 return cardsImg
-		//  return cardsImg.src = `${arr.src}`
-		//  console.log(cardsImg.src);
+		for (let i = 0; i < cardsList.length; i+=1) {
+			if(e === cardsList[i].alt){
+				arr=cardsList[i]
+				cardsImg.src=arr.src
+				cardsImg.alt=arr.alt
+			}	
+		}
 	}
 	
 })();
