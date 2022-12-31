@@ -8,11 +8,14 @@
 		cardsModalClose:document.querySelector('[data-cards-close]'),
 		cardsModal:document.querySelector('[data-cards]'),
 		cardsItem:document.querySelectorAll('.cards-img'),
-		cardsImg:document.querySelector('.cards-modal-img')
+		cardsImg:document.querySelector('.cards-modal-img'),
+      filter:document.querySelectorAll('.filter-btn'),
+		cardsFilterItem:document.querySelectorAll('.cards-item'),
+		cardsFilterText:document.querySelectorAll('.cards-text'),
 
    };
 
-	const {mobilOpen,mobilClose,mobil,body,cardsModalOpen,cardsModalClose,cardsModal,cardsItem,cardsImg} = refs
+	const {mobilOpen,mobilClose,mobil,body,cardsModalOpen,cardsModalClose,cardsModal,cardsItem,cardsImg,filter,cardsFilterItem,cardsFilterText} = refs
 	
 	const cardsList=[
 		{src:"./images/mob/cards1-2x.jpg",alt:"notebook"},
@@ -36,6 +39,9 @@
 	cardsItem.forEach(el => {
 		el.addEventListener('click',cardSwitch)
 	})
+	filter.forEach(el=>{
+		el.addEventListener('click',filterClick)
+	})
 
 	function toggleMobil() {
       mobil.classList.toggle('is-hidden');
@@ -58,6 +64,21 @@
 				cardsImg.alt=arr.alt
 			}	
 		}
+	}
+
+	function filterClick(event){
+		let evn = event.currentTarget.textContent
+		
+      for (let i = 0; i < cardsFilterItem.length; i+=1) {
+
+			 cardsFilterItem[i].classList.add('cards-none')
+
+			 if (evn === cardsFilterItem[i].dataset.filter || evn === "All") {
+				cardsFilterItem[i].classList.remove('cards-none')
+			 }
+
+			 }
+		
 	}
 	
 })();

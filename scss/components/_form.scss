@@ -41,6 +41,12 @@
 		color: $Accent;
 		fill: $Accent;
 	}
+	&:required:focus:not(:placeholder-shown):valid{
+		border-color: green;
+	}
+	&:required:focus:not(:placeholder-shown):invalid{
+		border-color: red;
+	}
 }
 
 .form-icon {

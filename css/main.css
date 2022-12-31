@@ -756,6 +756,10 @@ body {
   }
 }
 
+.cards-none {
+  display: none;
+}
+
 .filter-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1328,6 +1332,24 @@ body {
   top: 0;
   color: #2196F3;
   fill: #2196F3;
+}
+.form-input:required:focus:not(:-moz-placeholder-shown):valid {
+  border-color: green;
+}
+.form-input:required:focus:not(:-ms-input-placeholder):valid {
+  border-color: green;
+}
+.form-input:required:focus:not(:placeholder-shown):valid {
+  border-color: green;
+}
+.form-input:required:focus:not(:-moz-placeholder-shown):invalid {
+  border-color: red;
+}
+.form-input:required:focus:not(:-ms-input-placeholder):invalid {
+  border-color: red;
+}
+.form-input:required:focus:not(:placeholder-shown):invalid {
+  border-color: red;
 }
 
 .form-icon {
