@@ -11,7 +11,7 @@
 	@media screen and(max-width:767px) {
 		background-image: linear-gradient(to right,
 				rgba(47, 48, 58, 0.4),
-				rgba(47, 48, 58, 0.4)), url("../images/mob/hero-2x.jpg");
+			   rgba(47, 48, 58, 0.4)), url("../images/mob/hero-2x.webp");
 		max-width: 767px;
 		height: 400px;
 	}
@@ -19,7 +19,7 @@
 	@media screen and(min-width:767px) {
 		background-image: linear-gradient(to right,
 				rgba(47, 48, 58, 0.4),
-				rgba(47, 48, 58, 0.4)), url("../images/tab/hero_t-2x.jpg");
+				rgba(47, 48, 58, 0.4)), url("../images/tab/hero_t-2x.webp");
 		min-width: 768px;
 		height: 400px;
 	}
@@ -27,7 +27,7 @@
 	@media screen and(min-width:1200px) {
 		background-image: linear-gradient(to right,
 				rgba(47, 48, 58, 0.4),
-				rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+				rgba(47, 48, 58, 0.4)), url("../images/dek/hero_d-1x.webp");
 		height: 600px;
 		max-width: 1600px;
 		padding-top: 200px;
